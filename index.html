@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CJRoman</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Планировщик задач</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+  <div class="container">
+    <div class="heading">
+      <div class="flex-10"></div>
+      <div class="flex-80">
+        <p class="heading-text" href="">Планировщик задач</p>
+      </div>
+      <div class="flex-10 align-right">
+        <button id="toggle-theme"></button>
+      </div>
+    </div>
+    <div class="board">
+        <div class="block">
+            <strong>К выполнению</strong>
+            <div class="button-block">
+                <button id="create-task-button">Новая задача</button>
+            </div>
+            <div class="task-list" id="todo-tasks-list">
+            </div>
+        </div>
+        <div class="block">
+            <strong>В процессе</strong>
+            <div class="task-list" id="in-progress-tasks-list">
+            </div>
+        </div>
+        <div class="block">
+            <strong>Готово</strong>
+            <div class="task-list" id="done-tasks-list">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </div>
 </body>
 </html>
